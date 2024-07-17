@@ -50,7 +50,8 @@
 /* NAVBAR ANIMATION  */
 .navbar-nav a.nav-link {
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  color: #ffffff;
   padding: 0px !important;
 }
 
