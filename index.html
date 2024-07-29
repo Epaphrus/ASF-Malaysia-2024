@@ -9,132 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/zoom.css">
-
-    <style>
-        * {
-            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-                "Courier New", monospace;
-            line-height: 2.3;
-            scroll-behavior: smooth;
-        }
-
-        h1 {
-            font-family: "Ubuntu", sans-serif;
-        }
-
-        #myTabContent {
-            font-family: "Ubuntu", sans-serif !important;
-        }
-
-        #countdownSection,
-        #highlights {
-            background: #FFE000;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #799F0C, #FFE000);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #799F0C, #FFE000);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
-
-        .tgrad {
-            background: -webkit-linear-gradient(0.5turn, #31002e, #c738bd, #31002e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .slidein {
-            animation-duration: 2s;
-            animation-name: slidein;
-        }
-
-        @keyframes slidein {
-            from {
-                margin-left: 100%;
-                width: 300%;
-            }
-        }
-
-        .card img {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .card img:hover {
-            transform: scale(1.05);
-        }
-
-        .col img {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .col img:hover {
-            transform: scale(1.02);
-        }
-
-        .button {
-            position: relative;
-            overflow: hidden;
-            height: 3rem;
-            padding: 0 2rem;
-            border-radius: 1.5rem;
-            background: #059212;
-            background-size: 400%;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .button:hover::before {
-            transform: scaleX(1);
-        }
-
-        .button-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .button::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: scaleX(0);
-            transform-origin: 0 50%;
-            width: 100%;
-            height: inherit;
-            border-radius: inherit;
-            background: linear-gradient(82.3deg,
-                    rgba(255, 224, 0, 1) 10.8%,
-                    rgba(121, 159, 12, 1) 94.3%);
-            transition: all 0.475s;
-        }
-
-        .carousel-item img {
-            height: 90vh;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .carousel-item img {
-                height: 60vh;
-            }
-        }
-
-        .carousel-caption {
-            font-family: "Ubuntu", sans-serif;
-            align-self: center;
-        }
-
-        .carousel-caption h2 {
-            font-weight: bolder;
-            font-size: 7vh;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .carousel-caption h2 {
-                font-size: 3vh;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -257,35 +133,31 @@
         <!-- DATE COUNT-DOWN CLOCK CODE  -->
         <div id="countdownSection">
             <div class="container py-4 text-white">
-                <div class="row row-cols-2">
-                    <div class="col">
+                <div class="d-flex justify-content-between">
+                    <div>
                         <p> Conference Date</p>
                         <h3 class="fw-bold">
                             Count Every Second <br>
                             Until the Event
                         </h3>
                     </div>
-                    <div class="col">
-                        <div class="timer">
-                            <div class="col">
-                                <div class="time-wrapper">
-                                    <div class="label">Days</div>
-                                    <div class="time" id="days"></div>
-                                </div>
-                                <div class="time-wrapper">
-                                    <div class="label">Hours</div>
-                                    <div class="time" id="hours"></div>
-                                </div>
+                    <div>
+                        <div class="timer row row-cols-4">
+                            <div class="col time-wrapper">
+                                <div class="label">Days</div>
+                                <div class="time" id="days"></div>
                             </div>
-                            <div class="col">
-                                <div class="time-wrapper">
-                                    <div class="label">Minutes</div>
-                                    <div class="time" id="minutes"></div>
-                                </div>
-                                <div class="time-wrapper">
-                                    <div class="label">Seconds</div>
-                                    <div class="time" id="seconds"></div>
-                                </div>
+                            <div class="col time-wrapper">
+                                <div class="label">Hours</div>
+                                <div class="time" id="hours"></div>
+                            </div>
+                            <div class="col time-wrapper">
+                                <div class="label">Minutes</div>
+                                <div class="time" id="minutes"></div>
+                            </div>
+                            <div class="col time-wrapper">
+                                <div class="label">Seconds</div>
+                                <div class="time" id="seconds"></div>
                             </div>
                         </div>
                     </div>
