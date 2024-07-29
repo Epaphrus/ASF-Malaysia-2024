@@ -120,3 +120,28 @@ h1 {
         font-size: 3vh;
     }
 }
+
+/* COUNT DOWN SECTION CSS  */
+.time-wrapper {
+    text-align: center;
+}
+
+.time {
+    font-size: 2rem;
+    font-weight: bold; 
+    border-radius: 40%;
+    transition: transform 0.3s;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.time:hover {
+    transform: scale(1.02);
+}
+
+.label {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
