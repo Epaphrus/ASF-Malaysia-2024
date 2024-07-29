@@ -13,6 +13,10 @@ h1 {
     font-family: "Ubuntu", sans-serif !important;
 }
 
+#countdownSection {
+    font-family: "Ubuntu", sans-serif !important;
+}
+
 #countdownSection,
 #highlights {
     background: #FFE000;
@@ -128,7 +132,7 @@ h1 {
 
 .time {
     font-size: 2rem;
-    font-weight: bold; 
+    font-weight: bold;
     transition: transform 0.3s;
     background: rgba(255, 255, 255, 0.2);
 }
