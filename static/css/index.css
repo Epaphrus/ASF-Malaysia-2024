@@ -129,7 +129,6 @@ h1 {
 .time {
     font-size: 2rem;
     font-weight: bold; 
-    border-radius: 40%;
     transition: transform 0.3s;
     background: rgba(255, 255, 255, 0.2);
 }
