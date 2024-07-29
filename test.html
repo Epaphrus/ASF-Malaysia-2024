@@ -9,98 +9,93 @@
 
     <style>
         /* Countdown clock section */
-.countdown-timer {
-    text-align: center;
-    padding: 2rem;
-    background: linear-gradient(135deg, #212432 0%, #efdfba 100%);
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    color: #fff;
-}
+        .countdown-timer {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #212432 0%, #efdfba 100%);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            color: #fff;
+        }
 
-.timer-heading h1 {
-    margin-bottom: 1rem;
-    color: #efdfba;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-}
+        .timer-heading h1 {
+            margin-bottom: 1rem;
+            color: #efdfba;
+            font-family: "Ubuntu", sans-serif;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
 
-.heading-underline {
-    width: 100px;
-    height: 4px;
-    background-color: #efdfba;
-    margin: 0.5rem auto 1.5rem;
-    border-radius: 2px;
-}
+        .heading-underline {
+            width: 100px;
+            height: 4px;
+            background-color: #efdfba;
+            margin: 0.5rem auto 1.5rem;
+            border-radius: 2px;
+        }
 
-.timer {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin: 0 1rem;
-    flex-wrap: wrap;
-}
+        .timer {
+            display: flex;
+            justify-content: center;
+        }
 
-.time-wrapper {
-    text-align: center;
-    flex: 1 1 100px;
-    min-width: 100px;
-}
+        .time-wrapper {
+            text-align: center;
+        }
 
-.time {
-    font-size: 2rem;
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 1rem;
-    border-radius: 10px;
-    min-width: 80px;
-    position: relative;
-    transition: transform 0.3s;
-}
+        .time {
+            font-size: 2rem;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            min-width: 80px;
+            position: relative;
+            transition: transform 0.3s;
+        }
 
-.time:hover {
-    transform: scale(1.1);
-}
+        .time:hover {
+            transform: scale(1.02);
+        }
 
-.label {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    color: #efdfba;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+        .label {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            color: #efdfba;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-@media (max-width: 768px) {
-    .timer-heading h1 {
-        font-size: 2rem;
-    }
+        @media (max-width: 768px) {
+            .timer-heading h1 {
+                font-size: 2rem;
+            }
 
-    .time {
-        font-size: 1.5rem;
-        padding: 0.75rem;
-    }
+            .time {
+                font-size: 1.5rem;
+                padding: 0.75rem;
+            }
 
-    .label {
-        font-size: 0.875rem;
-    }
-}
+            .label {
+                font-size: 0.875rem;
+            }
+        }
 
-@media (max-width: 480px) {
-    .timer-heading h1 {
-        font-size: 1.5rem;
-    }
+        @media (max-width: 480px) {
+            .timer-heading h1 {
+                font-size: 1.5rem;
+            }
 
-    .time {
-        font-size: 1.25rem;
-        padding: 0.5rem;
-    }
+            .time {
+                font-size: 1.25rem;
+                padding: 0.5rem;
+            }
 
-    .label {
-        font-size: 0.75rem;
-    }
-}
+            .label {
+                font-size: 0.75rem;
+            }
+        }
     </style>
 </head>
 
@@ -108,28 +103,32 @@
 
     <!-- Event Countdown timer -->
     <section class="container my-5 countdown-timer">
-        <div class="heading">
+        <!-- <div class="heading">
             <div class="timer-heading mb-4">
                 <h1>COUNTDOWN TO THE EVENT</h1>
             </div>
             <div class="heading-underline"></div>
-        </div>
-        <div class="timer">
-            <div class="time-wrapper">
-                <div class="time" id="days"></div>
-                <div class="label">Days</div>
+        </div> -->
+        <div class="timer row-cols-2 ">
+            <div class="col">
+                <div class="time-wrapper">
+                    <div class="time" id="days"></div>
+                    <div class="label">Days</div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="time" id="hours"></div>
+                    <div class="label">Hours</div>
+                </div>
             </div>
-            <div class="time-wrapper">
-                <div class="time" id="hours"></div>
-                <div class="label">Hours</div>
-            </div>
-            <div class="time-wrapper">
-                <div class="time" id="minutes"></div>
-                <div class="label">Minutes</div>
-            </div>
-            <div class="time-wrapper">
-                <div class="time" id="seconds"></div>
-                <div class="label">Seconds</div>
+            <div class="col">
+                <div class="time-wrapper">
+                    <div class="time" id="minutes"></div>
+                    <div class="label">Minutes</div>
+                </div>
+                <div class="time-wrapper">
+                    <div class="time" id="seconds"></div>
+                    <div class="label">Seconds</div>
+                </div>
             </div>
         </div>
     </section>
@@ -137,77 +136,77 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             console.log("DOM fully loaded and parsed");
-          
+
             // Countdown timer
-            var countDownDate = new Date("Aug 16, 2024 19:00:00").getTime();
+            var countDownDate = new Date("Oct 24, 2024 12:00:00").getTime();
             var x = setInterval(function () {
-              var now = new Date().getTime();
-              var distance = countDownDate - now;
-              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-              var hours = Math.floor(
-                (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-              );
-              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-              // Update countdown timer elements if they exist
-              var daysElement = document.getElementById("days");
-              if (daysElement) daysElement.innerHTML = days;
-          
-              var hoursElement = document.getElementById("hours");
-              if (hoursElement) hoursElement.innerHTML = hours;
-          
-              var minutesElement = document.getElementById("minutes");
-              if (minutesElement) minutesElement.innerHTML = minutes;
-          
-              var secondsElement = document.getElementById("seconds");
-              if (secondsElement) secondsElement.innerHTML = seconds;
-          
-              if (distance < 0) {
-                clearInterval(x);
-                var timerElement = document.querySelector(".timer");
-                if (timerElement) timerElement.innerHTML = "EXPIRED";
-              }
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor(
+                    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Update countdown timer elements if they exist
+                var daysElement = document.getElementById("days");
+                if (daysElement) daysElement.innerHTML = days;
+
+                var hoursElement = document.getElementById("hours");
+                if (hoursElement) hoursElement.innerHTML = hours;
+
+                var minutesElement = document.getElementById("minutes");
+                if (minutesElement) minutesElement.innerHTML = minutes;
+
+                var secondsElement = document.getElementById("seconds");
+                if (secondsElement) secondsElement.innerHTML = seconds;
+
+                if (distance < 0) {
+                    clearInterval(x);
+                    var timerElement = document.querySelector(".timer");
+                    if (timerElement) timerElement.innerHTML = "EXPIRED";
+                }
             }, 1000);
-          
+
             var swiper = new Swiper(".speakers-slider", {
-              slidesPerView: 1,
-              spaceBetween: 20,
-              breakpoints: {
-                768: {
-                  slidesPerView: 2,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                    },
                 },
-                1024: {
-                  slidesPerView: 3,
+                loop: false,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
                 },
-              },
-              loop: false,
-              pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-              },
-              navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-              },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
             });
-          
+
             var navbarButton = document.querySelector(".navbar-button a");
             if (navbarButton) {
-              navbarButton.addEventListener("click", function (event) {
-                event.preventDefault();
-                var targetId = this.getAttribute("href").substring(1);
-                var targetElement = document.getElementById(targetId);
-                if (targetElement) {
-                  window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: "smooth",
-                  });
-                  history.pushState(null, null, " ");
-                }
-              });
+                navbarButton.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var targetId = this.getAttribute("href").substring(1);
+                    var targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop,
+                            behavior: "smooth",
+                        });
+                        history.pushState(null, null, " ");
+                    }
+                });
             }
-          });
+        });
 
     </script>
 

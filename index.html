@@ -257,14 +257,39 @@
         <!-- DATE COUNT-DOWN CLOCK CODE  -->
         <div id="countdownSection">
             <div class="container py-4 text-white">
-                <div>
-                    <p> Conference Date</p>
-                    <h3 class="fw-bold">
-                        Count Every Second <br>
-                        Until the Event
-                    </h3>
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <p> Conference Date</p>
+                        <h3 class="fw-bold">
+                            Count Every Second <br>
+                            Until the Event
+                        </h3>
+                    </div>
+                    <div class="col">
+                        <div class="timer">
+                            <div class="col">
+                                <div class="time-wrapper">
+                                    <div class="label">Days</div>
+                                    <div class="time" id="days"></div>
+                                </div>
+                                <div class="time-wrapper">
+                                    <div class="label">Hours</div>
+                                    <div class="time" id="hours"></div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="time-wrapper">
+                                    <div class="label">Minutes</div>
+                                    <div class="time" id="minutes"></div>
+                                </div>
+                                <div class="time-wrapper">
+                                    <div class="label">Seconds</div>
+                                    <div class="time" id="seconds"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div></div>
             </div>
         </div>
 
