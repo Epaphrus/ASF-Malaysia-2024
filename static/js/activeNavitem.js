@@ -1,27 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const navItems = document.querySelectorAll('.nav-item');
-    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('div');
 
-    function makeNavActive() {
-        let current = '';
+    function highlightActiveLink() {
+        let scrollPosition = window.scrollY;
 
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.pageYOffset >= sectionTop - sectionHeight / 3) {
-                current = section.getAttribute('id');
-            }
-        });
+            let sectionTop = section.offsetTop - 100; // Adjust offset as needed
+            let sectionBottom = sectionTop + section.offsetHeight;
+            let sectionId = section.getAttribute('id');
 
-        navItems.forEach(navItem => {
-            navItem.classList.remove('active');
-            const navLink = navItem.querySelector('.nav-link');
-            if (navLink && navLink.getAttribute('href') === `#${current}`) {
-                navItem.classList.add('active');
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
             }
         });
     }
 
-    window.addEventListener('scroll', makeNavActive);
-    makeNavActive(); // Set initial state
+    window.addEventListener('scroll', highlightActiveLink);
+    highlightActiveLink(); // Call once on load
 });

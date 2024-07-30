@@ -7,10 +7,6 @@ main {
 .navbar {
     transition: background-color 0.6s ease;
 }
-.nav-item.active .nav-link {
-    color: #059212;
-    font-weight: bold;
-}
 h1 {
     font-family: "Ubuntu", sans-serif;
 }
@@ -76,7 +72,6 @@ h1 {
     border-radius: 1.5rem;
     background: #059212;
     background-size: 400%;
-    color: #fff;
     border: none;
     cursor: pointer;
 }
@@ -160,3 +155,4 @@ h1 {
 #speakerImg {
     border-radius: 50% !important;
 }
+
