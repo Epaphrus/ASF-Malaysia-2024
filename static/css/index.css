@@ -13,7 +13,8 @@ h1 {
     font-family: "Ubuntu", sans-serif !important;
 }
 
-#countdownSection, #packages {
+#countdownSection,
+#packages {
     font-family: "Ubuntu", sans-serif !important;
 }
 
@@ -147,4 +148,9 @@ h1 {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+
+/* SPEAKER SECTION  */
+#speakerImg {
+    border-radius: 50% !important;
 }
