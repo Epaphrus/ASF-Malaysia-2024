@@ -32,20 +32,4 @@ document.addEventListener("DOMContentLoaded", function () {
             if (timerElement) timerElement.innerHTML = "EXPIRED";
         }
     }, 1000);
-
-    var navbarButton = document.querySelector(".navbar-button a");
-    if (navbarButton) {
-        navbarButton.addEventListener("click", function (event) {
-            event.preventDefault();
-            var targetId = this.getAttribute("href").substring(1);
-            var targetElement = document.getElementById(targetId);
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop,
-                    behavior: "smooth",
-                });
-                history.pushState(null, null, " ");
-            }
-        });
-    }
-});
+})
