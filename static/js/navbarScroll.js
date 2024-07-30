@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     const initialColor = '#00000057';
-    const targetColor = '#123800';
+    const targetColor = '#0e3100';
 
     // Set initial background color
     navbar.style.backgroundColor = initialColor;
