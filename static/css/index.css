@@ -156,3 +156,11 @@ h1 {
     border-radius: 50% !important;
 }
 
+/* ACTIVE NAVBAR LINK  */
+.nav-link {
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+.nav-link.active {
+    color: #00ff15 !important;
+    font-style: italic;
+}
