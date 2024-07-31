@@ -12,7 +12,7 @@ function validateForm() {
 
 
     // If the form is valid, show the success message as an alert
-    alert("Form submitted successfully! Thank you for your registration.");
+    alert("Form submitted successfully! Thank you for your registration. To register again, please refresh the page.");
 
     // Optionally, you can reset the form after successful submission
     form.reset();
