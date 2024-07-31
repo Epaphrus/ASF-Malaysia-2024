@@ -439,15 +439,18 @@
                         </div>
                         <div class="col-md-4">
                             <label for="validationCustom03" class="form-label">Phone no</label>
-                            <input type="tel" class="form-control" id="validationCustom03" required
-                                aria-required="true" />
-                            <div class="valid-feedback">Please enter a valid phone no.</div>
+                            <input type="tel" class="form-control" id="validationCustom03" required aria-required="true"
+                                pattern="^[0-9]{10}$" title="Please enter a 10-digit phone number" />
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please enter a valid 10-digit phone number.</div>
                         </div>
                         <div class="col-md-4">
                             <label for="validationCustom04" class="form-label">Email</label>
                             <input type="email" class="form-control" id="validationCustom04" required
-                                aria-required="true" />
-                            <div class="invalid-feedback">Please provide a valid Email.</div>
+                                aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                title="Please enter a valid email address" />
+                            <div class="valid-feedback">Looks good!</div>
+                            <div class="invalid-feedback">Please provide a valid email address.</div>
                         </div>
                         <div class="col-md-4">
                             <label for="validationCustom05" class="form-label">Address</label>

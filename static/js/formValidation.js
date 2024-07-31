@@ -10,9 +10,19 @@ function validateForm() {
     // If the form is valid, show the success message
     document.getElementById('successMessage').style.display = 'block';
 
+
+    // If the form is valid, show the success message as an alert
+    alert("Form submitted successfully! Thank you for your registration.");
+
     // Optionally, you can reset the form after successful submission
     form.reset();
     form.classList.remove('was-validated');
+
+    // Disable all form elements
+    var formElements = form.elements;
+    for (var i = 0; i < formElements.length; i++) {
+        formElements[i].disabled = true;
+    }
 
     // Prevent the form from actually submitting to demonstrate the message
     event.preventDefault();
