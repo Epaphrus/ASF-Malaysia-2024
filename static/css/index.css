@@ -172,6 +172,7 @@ h1 {
 
 /* SUBMIT FORM BUTTON CSS  */
 .submitForm {
+    margin-top: 10px;
     background: #00af12;
     color: #ffffff;
     border-radius: 10px;
