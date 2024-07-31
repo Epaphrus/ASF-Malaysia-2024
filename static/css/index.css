@@ -169,3 +169,21 @@ h1 {
     border-style: solid;
     font-style: italic;
 }
+
+/* SUBMIT FORM BUTTON CSS  */
+.submitForm {
+    background: #00af12;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.submitForm:hover {
+    background: #00ff15;
+    color: #000000;
+    transition: all 0.8s;
+}
