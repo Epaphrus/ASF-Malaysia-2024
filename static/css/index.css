@@ -3,6 +3,7 @@ main {
         "Courier New", monospace;
     line-height: 2.5;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .navbar {
