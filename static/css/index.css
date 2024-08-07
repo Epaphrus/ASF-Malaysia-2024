@@ -203,3 +203,17 @@ h1 {
 }
 
 /* tests */
+
+/* BACK TO TOP ARROW  */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: #00af12;
+    border-color: #00af12;
+}
+
+.back-to-top i {
+    color: white;
+}
