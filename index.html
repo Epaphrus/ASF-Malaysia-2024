@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+<div id="loader-wrapper">
+    <div class="plant-loader">
+        <div class="stem"></div>
+        <div class="leaf leaf-1"></div>
+        <div class="leaf leaf-2"></div>
+        <div class="leaf leaf-3"></div>
+    </div>
+    <div class="loading-text">Loading<span class="dots">...</span></div>
+</div>
 
 <head>
     <meta charset="UTF-8" />
@@ -14,7 +23,7 @@
     <link rel="stylesheet" href="static/css/zoom.css">
     <!-- ACTIVE NAVBAR ITEM  -->
     <script src="static/js/activeNavitem.js"></script>
-      <!-- BACK TO TOP jQUERY  -->
+    <!-- BACK TO TOP jQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
@@ -159,7 +168,7 @@
                 </div>
             </div>
         </div>
-        
+
 
         <!-- ABOUT CONTENT SECTION  -->
         <section class="container" id="about" style="padding-top: 10vh; padding-bottom: 10vh">
@@ -759,6 +768,15 @@
             <i class="bi bi-arrow-up-circle-fill"></i>
         </a>
     </main>
+
+    <!-- LOADER SCRIPT  -->
+    <script>
+        $(window).on('load', function () {
+            $('#loader-wrapper').fadeOut('slow', function () {
+                $(this).remove();
+            });
+        });
+    </script>
 
     <!-- COUNT DOWN SCRIPT GOES HERE -->
     <script src="static/js/countdown.js"></script>

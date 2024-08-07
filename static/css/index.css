@@ -230,3 +230,97 @@ h1 {
 .back-to-top i {
     color: white;
 }
+
+/* LOADER CSS  */
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.plant-loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.stem {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    height: 0;
+    background-color: #00af12;
+    animation: grow-stem 2s ease-out infinite;
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 100% 0;
+    background-color: #00af12;
+    opacity: 0;
+    animation: grow-leaf 2s ease-out infinite;
+}
+
+.leaf-1 {
+    top: 40%;
+    left: 50%;
+    transform: translate(-100%, -50%) rotate(-45deg);
+    animation-delay: 0.5s;
+}
+
+.leaf-2 {
+    top: 60%;
+    right: 50%;
+    transform: translate(100%, -50%) rotate(135deg);
+    animation-delay: 1s;
+}
+
+.leaf-3 {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    animation-delay: 1.5s;
+}
+
+@keyframes grow-stem {
+    0% { height: 0; }
+    100% { height: 100%; }
+}
+
+@keyframes grow-leaf {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.loading-text {
+    position: absolute;
+    bottom: 20%;
+    font-size: 24px;
+    color: #00af12;
+    font-weight: bold;
+}
+
+.dots {
+    display: inline-block;
+    width: 30px;
+    text-align: left;
+    animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% { content: ''; }
+    40% { content: '.'; }
+    60% { content: '..'; }
+    80%, 100% { content: '...'; }
+}
