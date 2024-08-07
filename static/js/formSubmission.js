@@ -12,7 +12,7 @@ function submitForm() {
     })
     .then(response => response.text())
     .then(result => {
-      alert("Form submitted successfully!");
+      alert("Form submitted successfully! Thank you for your registration. To register again, please refresh the page.");
       form.reset();
       disableForm();
     })
