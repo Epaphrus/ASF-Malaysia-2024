@@ -210,8 +210,8 @@ h1 {
     bottom: 25px;
     right: 25px;
     display: none;
-    background-color: #00af12;
-    border-color: #00af12;
+    background-color: #00af12 !important;
+    border-color: #00af12 !important;
 }
 
 .back-to-top i {
