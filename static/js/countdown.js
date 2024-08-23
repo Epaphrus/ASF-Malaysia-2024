@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log("DOM fully loaded and parsed");
 
     // Countdown timer
-    var countDownDate = new Date("Oct 24, 2024 12:00:00").getTime();
+    var countDownDate = new Date("Nov 26, 2024 12:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
