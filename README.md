@@ -70,4 +70,4 @@ Email: [maxwelkhadambi@gmail.com](mailto:maxwelkhadambi@gmail.com)
 
 - Bootstrap
 - Font Awesome
-- [List any other resources or libraries used]
+<!-- - [List any other resources or libraries used] -->
