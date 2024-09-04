@@ -28,10 +28,7 @@
             <div class="leaf leaf-3"></div>
         </div>
         <div class="loading-text" role="status" aria-live="polite">Loading<span class="dots">...</span></div>
-        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-            <div class="progress"></div>
-        </div>
-        <div class="percentage" aria-hidden="true">0%</div>
+        <div class="content-hint" aria-live="polite"></div>
     </div>
 
     <!-- NAVIGATION BAR SECTION  -->
@@ -813,20 +810,28 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script>
-        function updateProgress(percent) {
-            const progressBar = document.querySelector('.progress');
-            const percentageDisplay = document.querySelector('.percentage');
-            const progressBarWrapper = document.querySelector('.progress-bar');
+        const hints = [
+            "Did you know? Plants can communicate with each other through their roots.",
+            "Tip: Regular watering is key to keeping your plants healthy.",
+            "Fun fact: The Amazon rainforest produces 20% of the world's oxygen.",
+            "Gardening tip: Most houseplants prefer indirect sunlight.",
+            "Interesting fact: Some plants can live for thousands of years!"
+        ];
 
-            progressBar.style.width = percent + '%';
-            percentageDisplay.textContent = percent + '%';
-            progressBarWrapper.setAttribute('aria-valuenow', percent);
+        let currentHintIndex = 0;
+
+        function updateContentHint() {
+            const hintElement = document.querySelector('.content-hint');
+            hintElement.textContent = hints[currentHintIndex];
+            currentHintIndex = (currentHintIndex + 1) % hints.length;
         }
 
-        // Example usage:
-        // updateProgress(25); // 25% loaded
-        // updateProgress(50); // 50% loaded
-        // updateProgress(100); // Fully loaded
+        // Change hint every 5 seconds
+        setInterval(updateContentHint, 5000);
+
+        // Initial hint display
+        updateContentHint();
+
 
     </script>
 </body>
