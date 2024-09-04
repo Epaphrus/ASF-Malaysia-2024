@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<div id="loader-wrapper">
-    <div class="plant-loader">
-        <div class="stem"></div>
-        <div class="leaf leaf-1"></div>
-        <div class="leaf leaf-2"></div>
-        <div class="leaf leaf-3"></div>
-    </div>
-    <div class="loading-text">Loading<span class="dots">...</span></div>
-</div>
 
 <head>
     <meta charset="UTF-8" />
@@ -29,6 +20,16 @@
 </head>
 
 <body>
+    <div id="loader-wrapper" aria-label="Loading animation">
+        <div class="plant-loader" role="img" aria-label="Animated plant loader">
+            <div class="stem"></div>
+            <div class="leaf leaf-1"></div>
+            <div class="leaf leaf-2"></div>
+            <div class="leaf leaf-3"></div>
+        </div>
+        <div class="loading-text" role="status" aria-live="polite">Loading<span class="dots">...</span></div>
+    </div>
+
     <!-- NAVIGATION BAR SECTION  -->
     <nav class="navbar navbar-expand-lg fixed-top py-1 fixed-top">
         <div class="container">
