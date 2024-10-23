@@ -1,6 +1,6 @@
 main {
-    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-        "Courier New", monospace;
+    /* font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+        "Courier New", monospace; */
     line-height: 2.5;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -326,7 +326,7 @@ h1 {
 }
 
 /* SLIDE UP ON SCROLL CSS  */
-.fade-in-up {
+/* .fade-in-up {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -335,7 +335,7 @@ h1 {
 .fade-in-up.is-visible {
     opacity: 1;
     transform: translateY(0);
-}
+} */
 
 /* HERO SECTION  */
 .zoominheader {

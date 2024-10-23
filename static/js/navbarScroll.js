@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     const navbar = document.querySelector('.navbar');
     const initialColor = '#000000';
-    const targetColor = '#0e3100';
+    // const targetColor = '#0e3100';
 
     // Set initial background color
     navbar.style.backgroundColor = initialColor;
@@ -34,24 +34,24 @@ $(document).ready(function () {
 });
 
 // SLIDE UP CONTENT ONSCROLL 
-document.addEventListener('DOMContentLoaded', function() {
-    var fadeElements = document.querySelectorAll('.fade-in-up');
+// document.addEventListener('DOMContentLoaded', function() {
+//     var fadeElements = document.querySelectorAll('.fade-in-up');
 
-    function checkFade() {
-        fadeElements.forEach(function(element) {
-            var elementRect = element.getBoundingClientRect();
-            var elementHeight = elementRect.height;
-            var visibleHeight = Math.min(elementHeight, window.innerHeight - elementRect.top);
-            var visiblePercentage = (visibleHeight / elementHeight) * 100;
+//     function checkFade() {
+//         fadeElements.forEach(function(element) {
+//             var elementRect = element.getBoundingClientRect();
+//             var elementHeight = elementRect.height;
+//             var visibleHeight = Math.min(elementHeight, window.innerHeight - elementRect.top);
+//             var visiblePercentage = (visibleHeight / elementHeight) * 100;
 
-            if (visiblePercentage >= 50) {
-                element.classList.add('is-visible');
-            }
-        });
-    }
+//             if (visiblePercentage >= 50) {
+//                 element.classList.add('is-visible');
+//             }
+//         });
+//     }
 
-    window.addEventListener('scroll', checkFade);
-    window.addEventListener('resize', checkFade);
-    checkFade();
-});
+//     window.addEventListener('scroll', checkFade);
+//     window.addEventListener('resize', checkFade);
+//     checkFade();
+// });
 
