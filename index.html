@@ -16,6 +16,9 @@
     <script src="static/js/activeNavitem.js"></script>
     <!-- BACK TO TOP jQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add before closing head tag -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -98,44 +101,42 @@
                             <div class="overlay"></div>
                         </div>
                         <div class="carousel-caption lh-lg">
-                            <p class="fw-bold fs-3 text-warning">November 26-28, 2024</p>
-                            <h2>
+                            <p class="fw-bold fs-3 text-warning" data-aos="fade-right" data-aos-delay="200">November 26-28, 2024</p>
+                            <h2 data-aos="fade-up" data-aos-delay="600">
                                 We are back! <br />Asia Smart Farming & <br />
                                 Food Security 2024
                             </h2>
-                            <p>
+                            <p data-aos="fade-up" data-aos-delay="800">
                                 <i class="bi bi-geo-alt-fill text-warning"></i> Banquet Hall, UPM, Serdang, Malaysia
                             </p>
-                            <!-- Add this button for the CTA -->
-                            <a href="#registration"
-                                class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4">Register Now</a>
+                            <a href="#registration" class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4" 
+                               data-aos="zoom-in" data-aos-delay="800">Register Now</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="zoominheader">
+                        <div class="zoominheader" data-aos="zoom-in" data-aos-duration="1500">
                             <img src="static/IMAGES/Irrigation.webp" class="img-fluid d-block w-100 object-fit-cover"
                                 alt="photo" />
                             <div class="overlay"></div>
                         </div>
                         <div class="carousel-caption lh-lg">
-                            <p class="fw-bold fs-3 text-warning">November 26-28, 2024</p>
-                            <h2>Pesticide-Free Farming for a Healthier Nation</h2>
-                            <p>
+                            <p class="fw-bold fs-3 text-warning" data-aos="fade-down" data-aos-delay="200">November 26-28, 2024</p>
+                            <h2 data-aos="fade-up" data-aos-delay="400">Pesticide-Free Farming for a Healthier Nation</h2>
+                            <p data-aos="fade-up" data-aos-delay="600">
                                 <i class="bi bi-geo-alt-fill text-warning"></i> Banquet Hall, UPM, Serdang, Malaysia
                             </p>
-                            <!-- Add this button for the CTA -->
-                            <a href="#registration"
-                                class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4">Register Now</a>
+                            <a href="#registration" class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4"
+                               data-aos="zoom-in" data-aos-delay="800">Register Now</a>
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev" data-aos="fade-right">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
+                    data-bs-slide="next" data-aos="fade-left">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -180,18 +181,19 @@
         <!-- ABOUT CONTENT SECTION  -->
         <section class="container" id="about" style="padding-top: 10vh; padding-bottom: 10vh">
             <div class="row g-4">
-                <div class="col-12">
+                <div class="col-12" data-aos="fade-down" data-aos-duration="1000">
                     <p class="tgrad">ABOUT ASF2024</p>
                     <h1 class="fw-bold mt-4 tgrad">
                         Welcome to Asia Smart Farming <br>& Food Security 2024
                     </h1>
                 </div>
                 <div class="row g-3 align-items-stretch">
-                    <div class="col-12 col-lg-5 order-lg-last mb-4 d-flex align-items-stretch">
+                    <div class="col-12 col-lg-5 order-lg-last mb-4 d-flex align-items-stretch" data-aos="fade-left"
+                        data-aos-delay="200">
                         <img src="static/IMAGES/ppl1.jpg" class="img-fluid w-100 rounded-4 object-fit-cover"
                             alt="hero section image" />
                     </div>
-                    <div class="col-12 col-lg-7 d-flex flex-column">
+                    <div class="col-12 col-lg-7 d-flex flex-column" data-aos="fade-right" data-aos-delay="400">
                         <p class="flex-grow-1">
                             Asia Smart Farming & Food Security 2024 is your gateway to the
                             future of agriculture — a meticulously curated event where
@@ -213,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button mt-4">
+            <button class="button mt-4" data-aos="zoom-in" data-aos-delay="600">
                 <a href="#registration" class="text-decoration-none">
                     <span class="button-content fw-bold text-white">Register Now</span>
                 </a>
@@ -891,8 +893,13 @@
 
         // Initial hint display
         updateContentHint();
-
-
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100
+        });
     </script>
 </body>
 
