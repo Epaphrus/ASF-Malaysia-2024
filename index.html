@@ -16,6 +16,9 @@
     <script src="static/js/activeNavitem.js"></script>
     <!-- BACK TO TOP jQUERY  -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add before closing head tag -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
@@ -98,44 +101,45 @@
                             <div class="overlay"></div>
                         </div>
                         <div class="carousel-caption lh-lg">
-                            <p class="fw-bold fs-3 text-warning">November 26-28, 2024</p>
-                            <h2>
+                            <p class="fw-bold fs-3 text-warning" data-aos="fade-right" data-aos-delay="200">November
+                                26-28, 2024</p>
+                            <h2 data-aos="fade-up" data-aos-delay="600">
                                 We are back! <br />Asia Smart Farming & <br />
                                 Food Security 2024
                             </h2>
-                            <p>
+                            <p data-aos="fade-up" data-aos-delay="800">
                                 <i class="bi bi-geo-alt-fill text-warning"></i> Banquet Hall, UPM, Serdang, Malaysia
                             </p>
-                            <!-- Add this button for the CTA -->
-                            <a href="#registration"
-                                class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4">Register Now</a>
+                            <a href="#registration" class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4"
+                                data-aos="zoom-in" data-aos-delay="800">Register Now</a>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="zoominheader">
+                        <div class="zoominheader" data-aos="zoom-in" data-aos-duration="1500">
                             <img src="static/IMAGES/Irrigation.webp" class="img-fluid d-block w-100 object-fit-cover"
                                 alt="photo" />
                             <div class="overlay"></div>
                         </div>
                         <div class="carousel-caption lh-lg">
-                            <p class="fw-bold fs-3 text-warning">November 26-28, 2024</p>
-                            <h2>Pesticide-Free Farming for a Healthier Nation</h2>
-                            <p>
+                            <p class="fw-bold fs-3 text-warning" data-aos="fade-down" data-aos-delay="200">November
+                                26-28, 2024</p>
+                            <h2 data-aos="fade-up" data-aos-delay="400">Pesticide-Free Farming for a Healthier Nation
+                            </h2>
+                            <p data-aos="fade-up" data-aos-delay="600">
                                 <i class="bi bi-geo-alt-fill text-warning"></i> Banquet Hall, UPM, Serdang, Malaysia
                             </p>
-                            <!-- Add this button for the CTA -->
-                            <a href="#registration"
-                                class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4">Register Now</a>
+                            <a href="#registration" class="btn btn-warning btn-lg mt-3 rounded-pill fw-bold px-4"
+                                data-aos="zoom-in" data-aos-delay="800">Register Now</a>
                         </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
+                    data-bs-slide="prev" data-aos="fade-right">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
+                    data-bs-slide="next" data-aos="fade-left">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -146,14 +150,14 @@
         <div id="countdownSection">
             <div class="container py-4 text-white">
                 <div class="d-flex flex-wrap justify-content-md-between">
-                    <div class="fade-in-up">
+                    <div>
                         <p class="fw-semibold">Conference Date</p>
                         <h3 class="fw-bold fs-1">
                             Count Every Second <br>
                             Until the Event
                         </h3>
                     </div>
-                    <div class="countdown-timer glassmorphism fade-in-up">
+                    <div class="countdown-timer glassmorphism">
                         <div class="timer row row-cols-4">
                             <div class="col time-wrapper">
                                 <div class="label">Days</div>
@@ -180,18 +184,19 @@
         <!-- ABOUT CONTENT SECTION  -->
         <section class="container" id="about" style="padding-top: 10vh; padding-bottom: 10vh">
             <div class="row g-4">
-                <div class="col-12 fade-in-up">
+                <div class="col-12" data-aos="fade-down" data-aos-duration="1000">
                     <p class="tgrad">ABOUT ASF2024</p>
                     <h1 class="fw-bold mt-4 tgrad">
                         Welcome to Asia Smart Farming <br>& Food Security 2024
                     </h1>
                 </div>
                 <div class="row g-3 align-items-stretch">
-                    <div class="col-12 col-lg-5 order-lg-last mb-4 d-flex align-items-stretch fade-in-up">
+                    <div class="col-12 col-lg-5 order-lg-last mb-4 d-flex align-items-stretch" data-aos="fade-left"
+                        data-aos-delay="200">
                         <img src="static/IMAGES/ppl1.jpg" class="img-fluid w-100 rounded-4 object-fit-cover"
                             alt="hero section image" />
                     </div>
-                    <div class="col-12 col-lg-7 d-flex flex-column fade-in-up">
+                    <div class="col-12 col-lg-7 d-flex flex-column" data-aos="fade-right" data-aos-delay="400">
                         <p class="flex-grow-1">
                             Asia Smart Farming & Food Security 2024 is your gateway to the
                             future of agriculture — a meticulously curated event where
@@ -213,7 +218,7 @@
                     </div>
                 </div>
             </div>
-            <button class="button mt-4 fade-in-up">
+            <button class="button mt-4" data-aos="zoom-in" data-aos-delay="600">
                 <a href="#registration" class="text-decoration-none">
                     <span class="button-content fw-bold text-white">Register Now</span>
                 </a>
@@ -223,76 +228,77 @@
         <!-- WHO'S SPEAKING SECTION CODE  -->
         <div style="background-color: #f6f6f6;">
             <section class="container" id="speakers" style="padding-top: 10vh; padding-bottom: 10vh;">
-                <h2 class="fw-bold fs-1 text-center pb-4">Our Speakers</h2>
+                <h2 class="fw-bold fs-1 text-center pb-4" data-aos="fade-down" data-aos-duration="1000">Our Speakers
+                </h2>
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-5 py-4 lh-lg">
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
                         <img src="static/IMAGES/speakers/Speaker-9.jpg" class="img-fluid rounded-circle"
                             alt="Ms. Sarojeni Rengam">
                         <p class="fw-bold mb-0 mt-2">Ms. Sarojeni Rengam</p>
                         <p class="text-center">Executive Director Pesticide Action Network Asia Pacific (PANAP)</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="200">
                         <img src="static/IMAGES/speakers/Speaker-8.jpg" class="img-fluid rounded-circle"
                             alt="Mr. Alastair McLean">
                         <p class="fw-bold mb-0 mt-2">Mr. Alastair McLean</p>
                         <p class="text-center">Commercial Director Powerplants</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="300">
                         <img src="static/IMAGES/speakers/Speaker-7.jpg" class="img-fluid rounded-circle"
                             alt="Mr. Steven Hoffman">
                         <p class="fw-bold mb-0 mt-2">Mr. Steven Hoffman</p>
                         <p class="text-center">CEO & Chairman Founders Space</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="400">
                         <img src="static/IMAGES/speakers/Speaker-6.jpg" class="img-fluid rounded-circle"
                             alt="Mr. Saiful Zaimi Jamil">
                         <p class="fw-bold mb-0 mt-2">Mr. Saiful Zaimi Jamil</p>
                         <p class="text-center">Researcher for MARDI (Malaysia Agriculture Research & Development
                             Institute)</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="500">
                         <img src="static/IMAGES/speakers/Speaker-5.jpg" class="img-fluid rounded-circle"
                             alt="Mr. Mohd Shukri Bin Yahya">
                         <p class="fw-bold mb-0 mt-2">Mr. Mohd Shukri Bin Yahya</p>
                         <p class="text-center">Managing Director Picasynergy Holdings (M) Sdn Bhd</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="600">
                         <img src="static/IMAGES/speakers/Speaker-4.jpg" class="img-fluid rounded-circle"
                             alt="Mr. Bram Koppert">
                         <p class="fw-bold mb-0 mt-2">Mr. Bram Koppert</p>
                         <p class="text-center">Managing Director Asia NoSelf AND</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="700">
                         <img src="static/IMAGES/speakers/Speaker-3.jpg" class="img-fluid rounded-circle"
                             alt="Dr. Hawa Charfaray">
                         <p class="fw-bold mb-0 mt-2">Dr. Hawa Charfaray</p>
                         <p class="text-center">Group Executive Director Hadarat Global</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="800">
                         <img src="static/IMAGES/speakers/Speaker-2.jpg" class="img-fluid rounded-circle"
                             alt="Dr. Taco Bottema">
                         <p class="fw-bold mb-0 mt-2">Dr. Taco Bottema</p>
                         <p class="text-center">Senior Business Development Consultant Noself AND</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="900">
                         <img src="static/IMAGES/speakers/Speaker-1.jpg" class="img-fluid rounded-circle"
                             alt="Prof. Stefano Mazzoleni">
                         <p class="fw-bold mb-0 mt-2">Prof. Stefano Mazzoleni</p>
                         <p class="text-center">Professor University of Napoli Federico II</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="1000">
                         <img src="static/IMAGES/speakers/Mohan-K.jpeg" class="img-fluid rounded-circle"
                             alt="Dato' Sri Mohan K.">
                         <p class="fw-bold mb-0 mt-2">Dato' Sri Mohan K.</p>
                         <p class="text-center">Managing Director of Adastra Intellectual Property Sdn Bhd</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="1100">
                         <img src="static/IMAGES/speakers/Whitney-Ho-resized.jpg" class="img-fluid rounded-circle"
                             alt="Dato' Whitney Ho">
                         <p class="fw-bold mb-0 mt-2">Dato' Whitney Ho</p>
                         <p class="text-center">Chief Executive Officer of Arise Consulting</p>
                     </div>
-                    <div class="col d-flex flex-column align-items-center fade-in-up">
+                    <div class="col d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="1200">
                         <img src="static/IMAGES/speakers/Peter-Mutinda.jpg" class="img-fluid rounded-circle"
                             alt="Mr. Peter Mutinda">
                         <p class="fw-bold mb-0 mt-2">Mr. Peter Mutinda</p>
@@ -302,51 +308,50 @@
             </section>
         </div>
 
-
         <section id="highlights" style="padding-top: 10vh; padding-bottom: 10vh">
             <div class="container">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-2">
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-right" data-aos-duration="1000">
                         <p class="tgrad">WHAT TO EXPECT</p>
                         <h2 class="fw-bold my-4 text-white">Event Highlights</h2>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="100">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">Keynote Speakers</h4>
                             <p>Gain insights from global leaders in agriculture innovation.</p>
                         </div>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="200">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">23+ Countries</h4>
                             <p>Connect with delegates and opportunities from 23+ countries.</p>
                         </div>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="300">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">Conference</h4>
                             <p>Delve into smart farming advancements at our innovative conference.</p>
                         </div>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="400">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">Exhibitions</h4>
                             <p>Discover breakthrough innovations at our Cutting-Edge Exhibition.</p>
                         </div>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="500">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">Networking</h4>
                             <p>Enhance connections with dedicated networking and business matching.</p>
                         </div>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="600">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">Workshops & Seminar</h4>
                             <p>Engage in transformative expert-led workshops and seminars.</p>
                         </div>
                     </div>
-                    <div class="col fade-in-up">
+                    <div class="col" data-aos="fade-up" data-aos-delay="700">
                         <div class="bg-white rounded p-4 h-100">
                             <h4 class="fw-bold">Panel Discussion</h4>
                             <p>Dynamic panels drive smart farming innovations in Asia.</p>
@@ -356,131 +361,182 @@
             </div>
         </section>
 
-
         <!-- REGISTRATION SECTION CODE -->
-        <section id="packages" style="padding-top: 10vh; padding-bottom: 10vh; background-color: #f6f6f6;">
+        <section id="packages" class="py-5" style="background-color: #f8f9fa;">
             <div class="container">
-                <h2 class="fw-bold fade-in-up">Package Pricing</h2>
-                <hr style="color: #006605" fade-in-up />
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"
-                    style="font-family: 'Ubuntu', sans-serif !important">
-                    <div class="col fade-in-up">
-                        <div class="card border-success bg-white">
-                            <!-- <img src="static/IMAGES/hotel.jpg" class="card-img-top" alt="..." /> -->
-                            <div class="card-body">
-                                <h1 class="card-title fw-bold">$4,060.00</h1>
-                                <p class="card-text">
-                                    Package with Tour Deluxe Single(Individual Rooms)
-                                </p>
+                <div class="text-center mb-5">
+                    <h2 class="display-4 fw-bold mb-3">Our Pricing Packages</h2>
+                    <p class="lead text-muted">Choose the package that suits your needs</p>
+                    <hr class="mx-auto" style="width: 50px; height: 3px; background-color: #006605;">
+                </div>
+
+                <!-- ASF AGRO TOUR PACKAGE -->
+                <div class="mb-5">
+                    <h3 class="text-center mb-4 fw-bold">ASF AGRO TOUR PACKAGE</h3>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100 shadow-sm hover-lift">
+                                <div class="card-header text-center bg-success text-white py-4">
+                                    <h4 class="mb-0">Deluxe Single</h4>
+                                    <div class="display-6 fw-bold mt-2">USD 2,770</div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>7D6N
+                                            Breakfast</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Airport Transfer
+                                        </li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Transfer to event
+                                            venue</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Conference pass
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Kuala
+                                            Lumpur City Tour</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Kalompang IPM Farm
+                                            visit or Historical Malacca Day Tour</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 text-center py-4">
+                                    <a href="#registration" class="btn btn-success rounded-pill px-4">Select Package</a>
+                                </div>
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Hotel Rooms With breakfast - 7 Days, 6 Nights
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Airport Pickup and Drop - Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Daily Shuttle from Hotel to Venue - 3 days Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> KL City Tour
-                                    - 1 Day</li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Melaka Day Tour or Kalumpang Farm Visit - 1 Day
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Conference
-                                    Passes - 1</li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Flight
-                                    Ticket - Return Ticket</li>
-                            </ul>
                         </div>
-                    </div>
-                    <div class="col fade-in-up">
-                        <div class="card border-success bg-white">
-                            <!-- <img src="static/IMAGES/hotel.jpg" class="card-img-top" alt="..." /> -->
-                            <div class="card-body">
-                                <h1 class="card-title fw-bold">$3,990.00</h4>
-                                    <p class="card-text">
-                                        Package with Tour Deluxe Single/Twin Sharing
-                                    </p>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm hover-lift">
+                                <div class="card-header text-center bg-success text-white py-4">
+                                    <h4 class="mb-0">Deluxe Twin-share</h4>
+                                    <div class="display-6 fw-bold mt-2">USD 2,700</div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>7D6N
+                                            Breakfast</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Airport Transfer
+                                        </li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Transfer to event
+                                            venue</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Conference pass
+                                        </li>
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>Kuala
+                                            Lumpur City Tour</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Kalompang IPM Farm
+                                            visit or Historical Malacca Day Tour</li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 text-center py-4">
+                                    <a href="#registration" class="btn btn-success rounded-pill px-4">Select Package</a>
+                                </div>
                             </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Hotel Rooms With breakfast - 7 Days, 6 Nights
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Airport Pickup and Drop - Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Daily Shuttle from Hotel to Venue - 3 days Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> KL City Tour
-                                    - 1 Day</li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Melaka Day Tour or Kalumpang Farm Visit - 1 Day
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Conference
-                                    Passes - 1</li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Flight
-                                    Ticket - Return Ticket</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col fade-in-up">
-                        <div class="card border-success bg-white">
-                            <!-- <img src="static/IMAGES/hotel.jpg" class="card-img-top" alt="..." /> -->
-                            <div class="card-body">
-                                <h1 class="card-title fw-bold">$3,860.00</h4>
-                                    <p class="card-text">
-                                        Package Deluxe Single (Individual Rooms)
-                                    </p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Hotel Rooms With breakfast - 5 Days, 4 Nights
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Airport Pickup and Drop - Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Daily Shuttle from Hotel to Venue - 3 days Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Conference
-                                    Passes - 1</li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Flight
-                                    Ticket - Return Ticket</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col fade-in-up">
-                        <div class="card border-success bg-white">
-                            <!-- <img src="static/IMAGES/hotel.jpg" class="card-img-top" alt="..." /> -->
-                            <div class="card-body">
-                                <h1 class="card-title fw-bold">$3,790.00</h1>
-                                <p class="card-text">
-                                    Package with Tour Deluxe Single/Twin Sharing
-                                </p>
-                            </div>
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Hotel Rooms With breakfast - 5 Days, 4 Nights
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Airport Pickup and Drop - Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i>
-                                    Daily Shuttle from Hotel to Venue - 3 days Round Trip
-                                </li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Conference
-                                    Passes - 1</li>
-                                <li class="list-group-item"><i class="bi bi-dash bg-danger text-white"></i> Flight
-                                    Ticket - Return Ticket</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
+
+                <!-- ASF CONFERENCE PACKAGE -->
+                <div class="mb-5">
+                    <h3 class="text-center mb-4 fw-bold">ASF CONFERENCE PACKAGE</h3>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100 shadow-sm hover-lift">
+                                <div class="card-header text-center bg-success text-white py-4">
+                                    <h4 class="mb-0">Deluxe Single</h4>
+                                    <div class="display-6 fw-bold mt-2">USD 2,570</div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>5D4N
+                                            Breakfast</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Airport Transfer
+                                        </li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Transfer to event
+                                            venue</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Conference pass
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 text-center py-4">
+                                    <a href="#registration" class="btn btn-success rounded-pill px-4">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card h-100 shadow-sm hover-lift">
+                                <div class="card-header text-center bg-success text-white py-4">
+                                    <h4 class="mb-0">Deluxe Twin-share</h4>
+                                    <div class="display-6 fw-bold mt-2">USD 2,500</div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i>5D4N
+                                            Breakfast</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Airport Transfer
+                                        </li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Transfer to event
+                                            venue</li>
+                                        <li class="mb-3"><i
+                                                class="bi bi-check-circle-fill text-success me-2"></i>Conference pass
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card-footer bg-white border-0 text-center py-4">
+                                    <a href="#registration" class="btn btn-success rounded-pill px-4">Select Package</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Important Notes -->
+                <div class="bg-light p-4 rounded-3">
+                    <h4 class="mb-3 fw-semibold">Important Notes:</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-asterisk text-warning me-2"></i>The prices are Exclusive of the
+                            Flight Ticket</li>
+                        <li class="mb-2"><i class="bi bi-asterisk text-warning me-2"></i>Availability is on a
+                            first-come-first-served basis</li>
+                        <li class="mb-2"><i class="bi bi-asterisk text-warning me-2"></i>The prices quoted do not
+                            include airport transfer outside Malaysia</li>
+                        <!-- <li class="mb-2"><i class="bi bi-asterisk text-warning me-2"></i>The organiser reserves the
+                            right to make changes without prior notice</li> -->
+                    </ul>
+                </div>
             </div>
         </section>
+
+        <style>
+            .hover-lift {
+                transition: transform 0.2s ease-in-out;
+            }
+
+            .hover-lift:hover {
+                transform: translateY(-5px);
+            }
+
+            .card {
+                border: none;
+                border-radius: 15px;
+                overflow: hidden;
+            }
+
+            .bg-success {
+                background-color: #006605 !important;
+            }
+        </style>
+
 
         <!-- REGISTRATION FROM SECTION  -->
         <div style="background-color: #0e3100">
@@ -578,10 +634,10 @@
                             <select class="form-select" id="validationCustom10" name="package" required
                                 aria-required="true">
                                 <option selected disabled value="">Choose...</option>
-                                <option>$4,060.00</option>
-                                <option>$3,990.00</option>
-                                <option>$3,860.00</option>
-                                <option>$3,790.00</option>
+                                <option class="fw-bold">Deluxe Single USD $2,770</option>
+                                <option class="fw-bold">Deluxe Twin-share USD $2,700</option>
+                                <option class="fw-bold">Deluxe Single USD $2,570</option>
+                                <option class="fw-bold">Deluxe Twin-share USD $2,700</option>
                             </select>
                             <div class="invalid-feedback">Please select a valid package.</div>
                         </div>
@@ -626,9 +682,14 @@
 
 
                 <div class="col-md-4 pt-4">
-                    <label for="validationCustom03" class="form-label">Bank Details: <br> Account Name: ASIA
-                        AFRIKA CHAMBER OF COMMERCE Bank name: KCB Account Number: 1314611852 SWIFT CODE:
-                        KCBLKENX017</label>
+                    <label for="validationCustom03" class="form-label"><span class="fw-bold fs-2">Bank Details:</span>
+                        <br>
+                        <span class="fw-semibold fs-5">
+                            Account Name: ASIA
+                            AFRIKA CHAMBER OF COMMERCE Bank name: KCB Account Number: 1314611852 SWIFT CODE:
+                            KCBLKENX017
+                        </span>
+                    </label>
                     <!-- <input type="text" class="form-control" id="validationCustom03" required> -->
                     <div class="invalid-feedback">
 
@@ -834,8 +895,13 @@
 
         // Initial hint display
         updateContentHint();
-
-
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100
+        });
     </script>
 </body>
 
